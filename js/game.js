@@ -17,7 +17,7 @@ $map.addEventListener("click", function(e){
     let distanceHint = getDistanceHint(distance);
     $distance.innerHTML = `<h2>${distanceHint}</h2>`;
 
-    if(distance < 10){
-        return $distance.innerHTML = `<h1>Encontraste el tesoro con ${clicks} clicks!!<h1> <button onclick="location.reload()">Reiniciar juego</button> <audio src="../audios/sfx-victory6.mp3" autoplay></audio>`
+    if(distance < 100){
+        return $distance.innerHTML = `<h1>Encontraste el tesoro con ${clicks} clicks!!<h1> <button onclick="location.reload()">Reiniciar juego</button> <audio src="../audios/bites-ta-da-winner.mp3" autoplay></audio>`
     }
 });

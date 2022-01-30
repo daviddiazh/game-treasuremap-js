@@ -14,5 +14,18 @@ body{
 }
 
 h2{
-    margin: 30px 0;
+    margin: 5px 0;
+}
+
+img{
+    margin: 10px;
+}
+
+button{
+    width: 180px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.181);
+    color: #fff;
+    box-shadow: 3px 3px 3px #6e6e6e;
+    cursor: pointer;
 }

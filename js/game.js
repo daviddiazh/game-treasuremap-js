@@ -18,6 +18,6 @@ $map.addEventListener("click", function(e){
     $distance.innerHTML = `<h2>${distanceHint}</h2>`;
 
     if(distance < 10){
-        return $distance.innerHTML = `<h1>Encontraste el tesoro con ${clicks} clicks!!<h1> <button onclick="location.reload()">Reiniciar juego</button>`
+        return $distance.innerHTML = `<h1>Encontraste el tesoro con ${clicks} clicks!!<h1> <button onclick="location.reload()">Reiniciar juego</button> <audio src="../audios/sfx-victory6.mp3" autoplay></audio>`
     }
 });

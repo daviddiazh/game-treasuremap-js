@@ -7,3 +7,21 @@ const getDistance = (e, target) => {
     let diffY = e.offsetY - target.y;
     return Math.sqrt((diffX * diffX) + (diffY + diffY));
 }
+
+let getDistanceHint = distance => {
+    if(distance < 30){
+        return "Hirviendo!!"
+    }else if(distance < 40){
+        return "Muy cerca..."
+    }else if(distance < 60){
+        return "Caliente..."
+    }else if(distance < 100){
+        return "Calido..."
+    }else if(distance < 180){
+        return "Frío..."
+    }else if(distance < 300){
+        return "Muy frío..."
+    }else{
+        return "Congelado"
+    }
+}
